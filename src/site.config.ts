@@ -5,6 +5,7 @@ export const siteConfig: SiteConfig = {
 	// Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
 	author: "New Literacy Technology Consultants",
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
+	site_name: "New Literacy Blog",
 	date: {
 		locale: "en-US",
 		options: {
