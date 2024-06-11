@@ -1,6 +1,6 @@
 ---
 import type { SiteMeta } from "@/types";
-
+import { SEO } from "astro-seo"
 import { siteConfig } from "@/site-config";
 
 import "../styles/global.css";
@@ -15,36 +15,52 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url).href;
 ---
 
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+<SEO
+  title={siteTitle}
+  charset="utf-8"
+  canonical={canonicalURL}
+  description={description}
+  openGraph={{
+    basic: {
+		title:title,
+		type:articleDate? "article" : "website",
+		image: socialImageURL,
+		
+	}
+
+  }},
+  extend={{
+	link: [
+		{rel:"apple-touch-icon", href:"/apple-touch-icon.png"},
+		{rel:"manifest", href:"/manifest.webmanifest"},
+
+	],
+	meta:[
+		{name:"viewport", content:"width=device-width, initial-scale=1.0, shrink-to-fit=no"},
+		{name:"title" , content:siteTitle},
+		{name:"author", content:siteConfig.author},
+		{name:"theme-color", content:""},
+		{name:"og:site_name", content:siteConfig.title},
+		{name:"og:locale", content:siteConfig.ogLocale},
+		{name:"og:url", content:canonicalURL},
+		{name:"og:description", content:description},
+		{name:"og:image:width", content:"1200"},
+		{name:"og:image:height", content:"630"},
+	]
+  }}
+  />
+
 <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-<title>{siteTitle}</title>
 
 {/* Icons / Favicon */}
 <link href="/favicon.ico" rel="icon" sizes="any" />
 <link href="/icon.svg" rel="icon" type="image/svg+xml" />
-<link href="/apple-touch-icon.png" rel="apple-touch-icon" />
-<link href="/manifest.webmanifest" rel="manifest" />
-<link href={canonicalURL} rel="canonical" />
 
-{/* Primary Meta Tags */}
-<meta content={siteTitle} name="title" />
-<meta content={description} name="description" />
-<meta content={siteConfig.author} name="author" />
-
-{/* Theme Colour */}
-<meta content="" name="theme-color" />
 
 {/* Open Graph / Facebook */}
-<meta content={articleDate ? "article" : "website"} property="og:type" />
-<meta content={title} property="og:title" />
-<meta content={description} property="og:description" />
-<meta content={canonicalURL} property="og:url" />
-<meta content={siteConfig.title} property="og:site_name" />
-<meta content={siteConfig.ogLocale} property="og:locale" />
-<meta content={socialImageURL} property="og:image" />
-<meta content="1200" property="og:image:width" />
-<meta content="630" property="og:image:height" />
+
+{/* Icons / Favicon */}
+
 {
 	articleDate && (
 		<>
