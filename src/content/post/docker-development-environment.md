@@ -1,9 +1,11 @@
 ---
-publishDate: 2024-01-05T00:00:00Z
+publishDate: "06 May 2024"
 title: How to Use Docker for Development Environments
 description: here's where I got stuck when trying to use docker. 
-excerpt: It's common to want to develop within a docker environment. The project you're working on might not run natively on your system, or maybe you're working on a repository that was designed to run that way. The main blocking concept for me was VOLUMES, so I figured a post on the topic was in order..
-tags: ["docker", "development"]
+tags: ["docker", "development",  "devops", "system administration"]
+coverImage:
+    src: "../../assets/docker_logo.png"
+    alt: "docker logo"
 ---
 
 When developing an application running in Docker, you can edit the files on your local machine and have those changes immediately reflected in the running container. This is typically done using Docker volumes to mount your local project directory into the container. Here's how you can set this up:

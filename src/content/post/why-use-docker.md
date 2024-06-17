@@ -1,9 +1,12 @@
 ---
-publishDate: 2024-05-06T00:00:00Z
+publishDate: "05 May 2024"
 title: What is Docker and Where and Why Should You Use it?
 description: or how is containerization different from virtualization.
 excerpt: Docker is a platform designed for containerization, allowing developers to package applications and their dependencies into lightweight, portable containers. These containers are isolated environments that can run on any machine with Docker installed, providing consistency in deployment across different environments, from development to production.
-tags: ["docker","development"]
+tags: ["docker","development", "devops", "system administration"]
+coverImage:
+    src: "../../assets/docker_logo.png"
+    alt: "kubernetes logo"
 
 ---
 
