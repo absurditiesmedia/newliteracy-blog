@@ -1,7 +1,7 @@
 ---
 title: Horizontal Scaling in Kubernetes
 description: Horizontal scaling allows kubernetes to spin up instances as server load demands.
-tags: ["kubernetes", "development", "devops", "system-administration"]
+tags: ["kubernetes", "development", "devops", "system administration"]
 publishDate: "8 May 2024" 
 coverImage:
     src: "../../assets/kubernetes_logo.png"

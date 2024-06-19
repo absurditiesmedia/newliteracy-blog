@@ -1,7 +1,7 @@
 ---
 title: What is Kubernetes? Where and Why Should You Use it?
 description: Kubernetes automates the deployment of containers in real time.  
-tags: ["kubernetes", "development", "devops", "system-administration"]
+tags: ["kubernetes", "development", "devops", "system administration"]
 publishDate: "8 May 2024"
 coverImage:
     src: "../../assets/kubernetes_logo.png"

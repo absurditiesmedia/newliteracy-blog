@@ -15,7 +15,7 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Meta property used as the default description meta property
-	description: "New Literacy Technology Consultants Blog",
+	description: "Guides and tutorials covering a wide variety of concepts in information technology, brought to you by New Literacy Technology Consultants - Consulting, Sales and Repair for all your Technology needs in Holland, MI 616.300-6262",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: "en-US",
 	// Meta property, found in src/components/BaseHead.astro L:42
