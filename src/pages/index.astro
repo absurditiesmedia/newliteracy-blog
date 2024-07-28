@@ -11,32 +11,32 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 const cactusTech: { desc: string; href: string; title: string }[] = [
 	{
 		desc: "Turning Your Old Tech into New Opportunities",
-		href: "https://newliteracy.online/services/reduce-reuse-recycle/",
+		href: "/posts/reduce-reuse-recycle/",
 		title: "Technology Recycling Services",
 	},
 	{
+		title:"Repair,Virus Removal etc.",
 		desc: "Your Trusted Partner in Computer Solutions.",
-		href: "https://newliteracy.online/services/repair-upgrade-recovery-virus-removal/",
-		title: "Computer Repair",
+		href: "/posts/repair-upgrade-recovery-virus-removal/",
 	},
 	{
 		desc: "Welcome to the Future of Entertainment with Android TV Set-Top Boxes!",
-		href: "https://newliteracy.online/services/android-tv/",
+		href: "/posts/android-tv/",
 		title: "Android TV",
 	},
 	{
 		desc: "Powerful Computing Solutions for Your Business and Academic Needs",
-		href: "https://newliteracy.online/blog/busniness-adademic-computing/",
+		href: "/posts/busniness-adademic-computing/",
 		title: "Basic Systems",
 	},
 	{
 		desc: "Unleash Your Creativity with Customized High-End Builds",
-		href: "https://newliteracy.online/blog/custom-high-end-computers/",
+		href: "/posts/custom-high-end-computers/",
 		title: "Custom Systems",
 	},
 	{
 		desc: "Stay Connected and Productive with Our Range of Mobile Devices",
-		href: "https://newliteracy.online/blog/cutting-edge-mobile/",
+		href: "/posts/cutting-edge-mobile/",
 		title: "Mobile Devices",
 	},
 ];
@@ -44,23 +44,11 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-6">New Literacy Technology Consultants Blog</h1>
+		<h1 class="title mb-6">Affordable Computer Repair and Sales</h1>
 		<p class="mb-4">
 			{siteConfig.description}
 		</p>
 		<SocialList />
-	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
-		<ul class="space-y-4">
-			{
-				allPostsByDate.map((p) => (
-					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
 	</section>
 	<section class="mt-16">
 		<h2 class="title mb-4 text-xl">Services</h2>
@@ -82,4 +70,17 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 			}
 		</dl>
 	</section>
+	<section aria-label="Blog post list" class="mt-16">
+		<h2 class="title mb-4 text-xl">Posts</h2>
+		<ul class="space-y-4">
+			{
+				allPostsByDate.map((p) => (
+					<li class="grid gap-2 sm:grid-cols-[auto_1fr] sm:[&_q]:col-start-2">
+						<PostPreview post={p} />
+					</li>
+				))
+			}
+		</ul>
+	</section>
+
 </PageLayout>
