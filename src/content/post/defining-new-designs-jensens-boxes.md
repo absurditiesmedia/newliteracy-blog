@@ -1,6 +1,6 @@
 ---
 publishDate: "20 January 2025"
-title: Defining New ASCII Designs For GNU Boxes
+title: Defining New ASCII Designs For Thomas Jensens Boxes Software
 description: GNU Boxes is one of a handful of great ASCII art utilities for linux released under the GPL. 
 tags: ["GPL", "linux", "cli", "foss", "ascii art"]
 coverImage:
