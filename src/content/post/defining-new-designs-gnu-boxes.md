@@ -13,7 +13,7 @@ The Boxes command line tool takes a block of text and wraps it in one of 50 some
 
 Here's an example from the file `boxes-config` located in `$HOME/.config/boxes/boxes-config` new designs can be added to the end of this file:
 
-```
+```bash
 BOX doublelinebox
 author  "Rick Pfahl"
 designer "(public domain)"
@@ -53,7 +53,7 @@ Next you'll find the elastic function, this will specify which sides will be ela
 The configuration of a box is complete with the addition of END <designmame> to match the BOX <designname> at the top.
 
 Here's another more complicated example. Notice how multiple rows are defined as a list of comma delimited, double-quote enclosed strings:
-```
+```bash
 BOX gradientbox
 author "Rick Pfahl"
 designer "(public domain)"

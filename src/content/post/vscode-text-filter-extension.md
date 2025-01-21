@@ -19,7 +19,7 @@ Anyway back to the details. Once `Selection Convert` is installed, you need to i
 
 Let's have a look at an example `selection-convert.js` file:
 
-```
+```js
 const { execSync } = require('child_process');
 
 //Filter Export Functions
@@ -56,7 +56,7 @@ This line is a common way to use the `child_process` module in Node.js. It allow
 
 Next we define the a filter function.
 
-```
+```javascript
 selectionToParchment = function(text) {
   var result = runFilter(text, 'parchment');
   return result;
@@ -66,7 +66,7 @@ selectionToParchment = function(text) {
 
 which passes the `text` though `runFilter`
 
-```
+```javascript
 runFilter = function(text, design) {
   var command = "echo \""+text+"\" | boxes -d "+design+" -p h1 -s 80 -i none -n UTF-8"
   var result = "";
