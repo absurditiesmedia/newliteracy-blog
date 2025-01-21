@@ -1,0 +1,38 @@
+- Tailwind
+
+{ 'green': { DEFAULT: '#00ff00', 100: '#003300', 200: '#006600', 300: '#009900', 400: '#00cc00', 500: '#00ff00', 600: '#33ff33', 700: '#66ff66', 800: '#99ff99', 900: '#ccffcc' }, 'blue': { DEFAULT: '#0000ff', 100: '#000033', 200: '#000066', 300: '#000099', 400: '#0000cc', 500: '#0000ff', 600: '#3333ff', 700: '#6666ff', 800: '#9999ff', 900: '#ccccff' }, 'red': { DEFAULT: '#ff0000', 100: '#330000', 200: '#660000', 300: '#990000', 400: '#cc0000', 500: '#ff0000', 600: '#ff3333', 700: '#ff6666', 800: '#ff9999', 900: '#ffcccc' }, 'yellow': { DEFAULT: '#ffff00', 100: '#333300', 200: '#666600', 300: '#999900', 400: '#cccc00', 500: '#ffff00', 600: '#ffff33', 700: '#ffff66', 800: '#ffff99', 900: '#ffffcc' }, 'fuchsia': { DEFAULT: '#ff00ff', 100: '#330033', 200: '#660066', 300: '#990099', 400: '#cc00cc', 500: '#ff00ff', 600: '#ff33ff', 700: '#ff66ff', 800: '#ff99ff', 900: '#ffccff' }, 'cyan_(rgb)': { DEFAULT: '#00ffff', 100: '#003333', 200: '#006666', 300: '#009999', 400: '#00cccc', 500: '#00ffff', 600: '#33ffff', 700: '#66ffff', 800: '#99ffff', 900: '#ccffff' }, 'electric_violet': { DEFAULT: '#8800ff', 100: '#1b0033', 200: '#360066', 300: '#520099', 400: '#6d00cc', 500: '#8800ff', 600: '#a033ff', 700: '#b866ff', 800: '#cf99ff', 900: '#e7ccff' }, 'rose': { DEFAULT: '#ff0077', 100: '#330018', 200: '#660030', 300: '#990047', 400: '#cc005f', 500: '#ff0077', 600: '#ff3392', 700: '#ff66ad', 800: '#ff99c9', 900: '#ffcce4' }, 'pumpkin': { DEFAULT: '#ff6600', 100: '#331400', 200: '#662900', 300: '#993d00', 400: '#cc5200', 500: '#ff6600', 600: '#ff8533', 700: '#ffa366', 800: '#ffc299', 900: '#ffe0cc' }, 'shocking_pink': { DEFAULT: '#ff00bb', 100: '#330025', 200: '#66004b', 300: '#990070', 400: '#cc0096', 500: '#ff00bb', 600: '#ff33c9', 700: '#ff66d6', 800: '#ff99e4', 900: '#ffccf1' } }
+
+- CSV
+
+00ff00,0000ff,ff0000,ffff00,ff00ff,00ffff,8800ff,ff0077,ff6600,ff00bb
+
+- With #
+
+#00ff00, #0000ff, #ff0000, #ffff00, #ff00ff, #00ffff, #8800ff, #ff0077, #ff6600, #ff00bb
+
+- Array
+
+["00ff00","0000ff","ff0000","ffff00","ff00ff","00ffff","8800ff","ff0077","ff6600","ff00bb"]
+
+- Object
+
+{"Green":"00ff00","Blue":"0000ff","Red":"ff0000","Yellow":"ffff00","Fuchsia":"ff00ff","Cyan (RGB)":"00ffff","Electric violet":"8800ff","Rose":"ff0077","Pumpkin":"ff6600","Shocking pink":"ff00bb"}
+
+- Extended Array
+
+[{"name":"Green","hex":"00ff00","rgb":[0,255,0],"cmyk":[100,0,100,0],"hsb":[120,100,100],"hsl":[120,100,50],"lab":[88,-86,83]},{"name":"Blue","hex":"0000ff","rgb":[0,0,255],"cmyk":[100,100,0,0],"hsb":[240,100,100],"hsl":[240,100,50],"lab":[32,79,-108]},{"name":"Red","hex":"ff0000","rgb":[255,0,0],"cmyk":[0,100,100,0],"hsb":[0,100,100],"hsl":[0,100,50],"lab":[53,80,67]},{"name":"Yellow","hex":"ffff00","rgb":[255,255,0],"cmyk":[0,0,100,0],"hsb":[60,100,100],"hsl":[60,100,50],"lab":[97,-22,94]},{"name":"Fuchsia","hex":"ff00ff","rgb":[255,0,255],"cmyk":[0,100,0,0],"hsb":[300,100,100],"hsl":[300,100,50],"lab":[60,98,-61]},{"name":"Cyan (RGB)","hex":"00ffff","rgb":[0,255,255],"cmyk":[100,0,0,0],"hsb":[180,100,100],"hsl":[180,100,50],"lab":[91,-48,-14]},{"name":"Electric violet","hex":"8800ff","rgb":[136,0,255],"cmyk":[47,100,0,0],"hsb":[272,100,100],"hsl":[272,100,50],"lab":[42,84,-92]},{"name":"Rose","hex":"ff0077","rgb":[255,0,119],"cmyk":[0,100,53,0],"hsb":[332,100,100],"hsl":[332,100,50],"lab":[55,84,9]},{"name":"Pumpkin","hex":"ff6600","rgb":[255,102,0],"cmyk":[0,60,100,0],"hsb":[24,100,100],"hsl":[24,100,50],"lab":[62,55,71]},{"name":"Shocking pink","hex":"ff00bb","rgb":[255,0,187],"cmyk":[0,100,27,0],"hsb":[316,100,100],"hsl":[316,100,50],"lab":[57,90,-28]}]
+
+- XML
+
+<palette>
+  <color name="Green" hex="00ff00" r="0" g="255" b="0" />
+  <color name="Blue" hex="0000ff" r="0" g="0" b="255" />
+  <color name="Red" hex="ff0000" r="255" g="0" b="0" />
+  <color name="Yellow" hex="ffff00" r="255" g="255" b="0" />
+  <color name="Fuchsia" hex="ff00ff" r="255" g="0" b="255" />
+  <color name="Cyan (RGB)" hex="00ffff" r="0" g="255" b="255" />
+  <color name="Electric violet" hex="8800ff" r="136" g="0" b="255" />
+  <color name="Rose" hex="ff0077" r="255" g="0" b="119" />
+  <color name="Pumpkin" hex="ff6600" r="255" g="102" b="0" />
+  <color name="Shocking pink" hex="ff00bb" r="255" g="0" b="187" />
+</palette>
