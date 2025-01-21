@@ -3,7 +3,7 @@ publishDate: "24 Oct 2024"
 title: Part 2, Understanding Named and Default Exports
 description: Where and why to use default and named exports in ES6
 excerpt: Both named and default exports allow you to share functionality between modules, but there are key differences in how they work and when you should use each.
-tags: ["NodeJS","JavaScript", "ECMAScript 2015 (ES6)", "Series: JavaScript ES6 import/export"]
+tags: ["NodeJS","JavaScript", "ECMAScript 2015"]
 coverImage:
     src: "../../assets/jses6_logo.png"
     alt: "vscode logo"

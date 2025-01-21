@@ -3,7 +3,7 @@ publishDate: "24 Oct 2024"
 title: "Understanding JavaScript Promises"
 description: "To understand Promises, it is important to understand what exactly thenables are."
 excerpt: "To put it simply: a thenable is any object that implements a then method, regardless of whether it is a Promise."
-tags: ["JavaScript", "ECMAScript 2015 (ES6)", "lazy-loading", "asynchronous"]
+tags: ["JavaScript", "ECMAScript 2015", "lazy-loading", "asynchronous"]
 coverImage:
     src: "../../assets/jses6_logo.png"
     alt: "JavaScript ES6 Logo"

@@ -3,7 +3,7 @@ publishDate: "24 Oct 2024"
 title: Part 4, Dynamic Imports and Lazy Loading
 description: Dynamic imports delay the loading of modules until they are needed.
 excerpt: There are cases where loading a module upfront isn’t ideal. You might only need a module based on user actions, or you might want to delay loading to optimize the performance of your application..
-tags: ["NodeJS","JavaScript", "ECMAScript 2015 (ES6)", "Series: JavaScript ES6 import/export"]
+tags: ["NodeJS","JavaScript", "ECMAScript 2015"]
 coverImage:
     src: "../../assets/jses6_logo.png"
     alt: "vscode logo"

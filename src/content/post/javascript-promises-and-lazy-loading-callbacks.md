@@ -3,7 +3,7 @@ publishDate: "24 October 2024"
 title:  "Understanding JavaScript Promises and Lazy Loading Callbacks"
 description: "One of the advantages of ES6 Promises is the ability to lazy load callback functions."
 excerpt: "A key feature of ES6 Promises is that they don't immediately execute the callback functions passed to the `then` method. Instead, the callback is only queued to execute once the promise resolves or rejects."
-tags: ["JavaScript", "ECMAScript 2015 (ES6)", "lazy-loading", "asynchronous"]
+tags: ["JavaScript", "ECMAScript 2015", "lazy-loading", "asynchronous"]
 coverImage:
     src: "../../assets/jses6_logo.png"
     alt: "JavaScript ES6 Logo"

@@ -3,7 +3,7 @@ title: Javascript ES6 Modules, Introduction
 description: In this series of posts, I will break down the important features of Javascript ES6.
 excerpt: Modules in JavaScript allow you to break your code into smaller, more focused files and then use import and export statements to connect them.
 publishDate: "23 Oct 2024"
-tags: ["NodeJS","JavaScript", "ECMAScript 2015 (ES6)", "Series: JavaScript ES6 import/export"]
+tags: ["NodeJS","JavaScript", "ECMAScript 2015"]
 coverImage:
     src: "../../assets/jses6_logo.png"
     alt: "vscode logo"

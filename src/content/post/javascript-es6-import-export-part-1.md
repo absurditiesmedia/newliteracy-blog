@@ -3,7 +3,7 @@ publishDate: "24 Oct 2024"
 title: Part 1, Getting Started with Modules
 description: The fundamental concepts of importing and exporting in ES6
 excerpt: Before ES6, JavaScript did not have a native module system, which made it difficult to split large codebases into manageable pieces
-tags: ["NodeJS","JavaScript", "ECMAScript 2015 (ES6)", "Series: JavaScript ES6 import/export"]
+tags: ["NodeJS","JavaScript", "ECMAScript 2015"]
 coverImage:
     src: "../../assets/jses6_logo.png"
     alt: "vscode logo"

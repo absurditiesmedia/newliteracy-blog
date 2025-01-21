@@ -3,7 +3,7 @@ publishDate: "24 Oct 2024"
 title: Part 5, Best Practices and Advanced Techniques
 description:  Advanced techniques to enhance your code organization and maintainability.
 excerpt: In this final part, we will delve into best practices for structuring and managing your modules, as well as some advanced techniques to enhance your code organization and maintainability.
-tags: ["NodeJS","JavaScript", "ECMAScript 2015 (ES6)", "Series: JavaScript ES6 import/export"]
+tags: ["NodeJS","JavaScript", "ECMAScript 2015"]
 coverImage:
     src: "../../assets/jses6_logo.png"
     alt: "vscode logo"

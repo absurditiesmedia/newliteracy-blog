@@ -3,7 +3,7 @@ publishDate: "24 Oct 2024"
 title: Part 3, Re-exports and Module Aggregation
 description: re-exports allow consolidation and exports across multiple files.
 excerpt: In this part we will explore how re-exports and module aggregation can help you streamline imports, improve project structure, and enhance code modularity.
-tags: ["NodeJS","JavaScript", "ECMAScript 2015 (ES6)", "Series: JavaScript ES6 import/export"]
+tags: ["NodeJS","JavaScript", "ECMAScript 2015"]
 coverImage:
     src: "../../assets/jses6_logo.png"
     alt: "vscode logo"
