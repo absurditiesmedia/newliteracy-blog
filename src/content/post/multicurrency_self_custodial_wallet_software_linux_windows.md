@@ -11,12 +11,12 @@ coverImage:
 I decided to take a look at a variety of cryptocurrency wallets for linux and windows. I am a huge beliver in the merits of a self-custodial wallet. No matter how big or transparent the provider, storing cryptocurrency where *ANYONE* else can access it, is not only a risk, it really just feels like it is entirely against the point. Anyway, I wanted to find an all-in-one solution to have the option to store my cryptocurrency, and I realized there just isn't that many great options, in fact, every piece of software that attempts to do this is essentially the same program over and over again. 
 
 I feel like the most effective way to determine the investment potential of a specific coin is to look at the wallet software associated with it. 
-Bitcoin and Monero have excellent wallet software. For bitcoin, you have [Electrum][https://electrum.org] and [Sparrow](https://sparowwallet.com). Monero has it's own wallet software, [Monero Wallet][https://getmonero.org/]. Litecoin has [Litecoin Core][https://litecoin.com/litecoin-core.html]. Ethereum has [MyEtherWallet][https://geth.ethereum.org/]. And these seem to work just fine. But if you want a solution for your desktop environment that allows you to store a variety of altcoins, the following wallet software are all essentially the same: 
+Bitcoin and Monero have excellent wallet software. For bitcoin, you have [Electrum](https://electrum.org) and [Sparrow](https://sparrowwallet.com/). Monero has it's own wallet software, [Monero Wallet](https://getmonero.org/). Litecoin has [Litecoin Core](https://litecoin.com/projects/core). Ethereum has [geth or go-ethereum](https://geth.ethereum.org/). And these seem to work just fine. But if you want a solution for your desktop environment that allows you to store a variety of altcoins, the following wallet software are all essentially the same: 
 
 - [Atomic Wallet](https://atomicwallet.io/)
 - [Stack Wallet](https://stackwallet.com/)
 - [Coinomi Wallet](https://www.coinomi.com/en/)
-- [Exodus Wallet](https://www.exodus.com/)
+- [Exodus Wallet](https://www.exodus.com/)eth_
 
 Generally they work like this, you open the software, you're prompted to create or restore your wallet. Then you get a screen something like this, and all your altcoin wallets appear to be linked to your ethereum wallet. 
 
@@ -71,7 +71,7 @@ Exodus screen for obtaining address to receive.
 ## Coin Swap
 This is a nice feature, which all of the wallets have. No doubt with an affiliate account associated. To be fair, there wouldn't really be a need for a self-custodial wallet that supports all of these altcoins without those exchanges. None of the altcoins would have ever gotten off the ground. So it makes sense these wallets would be developed with the promise of a cut of the tiny percentages that occur with every swap. I'm tempted to create my own variation on this theme. 
 
-![Atomic Swap Currency](/images/crypto-wallets/atomic_swap_eth_screen.png)
+![Atomic Swap Currency](/images/crypto-wallets/atomic_swap_screen.png)
 Atomic Currency Swap/
 
 ![Stack Swap Currency](/images/crypto-wallets/stack_swap.png)
