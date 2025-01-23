@@ -1,6 +1,6 @@
 ---
 publishDate: "23 January 2025"
-title: Operation of a Blog Built wirh AstroJS Static Site Generator
+title: Operation of a Blog Built with AstroJS Static Site Generator
 description: AstroJS is a powerful means of digital publishing that with a small amount of study can provide a more powerful means of digital publishing than wordpress
 tags: ["AstroJS", "digital publishing", "static site generator", "blogging", "markdown"]
 coverImage:
@@ -12,13 +12,15 @@ Once configured, an AstroJS website only involves a small amount of technical sk
 
 ## Checking out and running a development instance
 
-The first thing to do when working on an AstroJS website is to either clone the repository of the site you'll be working on, or if you're starting a new site from a theme, you can download or fork the repository of one of the theme found on the [Astro Themes Website](https://astro.build/themes/). If you forked and existing theme, you're all set. Alternatively if you just downloaded the theme, you'll need to create a repository on github or gitlab, and initialize a new repository from the project root by running `git init`. For the purposes of this write up, I'll assume you've already completed this step. I'll write an article outlining this proocess at a leter date, but I'm sure you can find instructions for this elsewhere on the web.
+The first thing to do when working on an AstroJS website is to either clone the repository of the site you'll be working on, or if you're starting a new site from a theme, you can download or fork the repository of one of the theme found on the [Astro Themes Website](https://astro.build/themes/). If you forked and existing theme, you're all set. Alternatively if you just downloaded the theme, you'll need to create a repository on github or gitlab, and initialize a new repository from the project root by running `git init`. For the purposes of this write up, I'll assume you've already completed this step. I'll write an article outlining this process at a leter date, but I'm sure you can find instructions for this elsewhere on the web.
 
 This site was built using astroJS and the following is the abbreviated structure of the project. 
 
 Let's take a look at an abbreviated listing of the files in an astroJS site and go over the important moving parts:
 
-```bash
+```bashthis should be a sufficient introduction to a whole bunch of concepts. 
+
+Congratulations, you can now operate a website and
 [project root]
 ├── astro.config.ts
 ├── LICENSE
@@ -164,7 +166,7 @@ This will start the development server. You'll see something like:
 
 13:47:07 watching for file changes...
 ```
-informing you that you can view the current state of your site at `http://localhost:4321/ any changes you make to the files will be automatically reloaded and immediately reflected in your browser and the terminal.
+informing you that you can view the current state of your site at [http://localhost:4321/](http://localhost:4321) any changes you make to the files will be automatically reloaded and immediately reflected in your browser and the terminal.
 
 ## Public Files
 The files under the directory `/public` will be accessible from the root of your site. They are served as-is with not preprocessing done to them. If you add images or other media, they can be linked from within your pages or templates directly. For example, try this link [https://newliteracy.online/android-chrome-192x192.png](https://newliteracy.online/android-chrome-192x192.png). Notice that the file `android-chrome-192x192.png` is directly within the `public/` directory. Now try [https://newliteracy.online/images/crypto-wallets/bitcoin-address.png](https://newliteracy.online/images/crypto-wallets/bitcoin-address.png) and notice that the file `bitcoin-address.png` is in the `public/images/crypto-wallets/` directory. Another way of describing this is to say that the files in `public/` are mapped to the **webroot** of the site.
@@ -176,22 +178,22 @@ Now that we've reviewed how to check-out, install, and run the development serve
 
 ### The assets/ directory
 
-There's a directory called `assets/` where images and other media are stored. You might be wondering why there's a second direcory for this in addition to the `public` directory. Without going into a lot of detail, I'll just note that there exist functionality within node modules to run various operations on these files before making them ready to be served to the client. This could be any number of things, such as minifying css, running images through optimizations, overlaying text on top of the images. These operations are limited only by the developers imagination and the technology that exists at present. Belive me, there are many use cases in which having the ability to run server side modifications on assets is incredibly useful. 
+There's a directory called `assets/` where images and other media are stored. You might be wondering why there's a second directory for this in addition to the `public` directory. Without going into a lot of detail, I'll just note that there exist functionality within node modules to run various operations on these files before making them ready to be served to the client. This could be any number of things, such as minifying css, running images through optimizations, overlaying text on top of the images. These operations are limited only by the developers imagination and the technology that exists at present. Believe me, there are many use cases in which having the ability to run server side modifications on assets is incredibly useful. 
 
 ### The components/ and layouts/ directories
 
-Files under `components/` generally have the extension `.astro` which means they can contain Javascript for dynamic rendering. Take a look at the names of the files. They represent, you guessed it, components of the page. `BaseHead.astro` in spite of sharing a name with an prejorative for an individual who has a problematic relationship with freebase cocaine, contains the content that will appear inside the `<head></head>` html tag, it contians variables that will be replaced with different values on each page. A subdirectory `components/blog/` contains the individual parts of the pages that display the listing of blog entries and pages such as the one you're reading right now. 
+Files under `components/` generally have the extension `.astro` which means they can contain Javascript for dynamic rendering. Take a look at the names of the files. They represent, you guessed it, components of the page. `BaseHead.astro` in spite of sharing a name with an prejorative for an individual who has a problematic relationship with freebase cocaine, contains the content that will appear inside the `<head></head>` html tag, it contains variables that will be replaced with different values on each page. A subdirectory `components/blog/` contains the individual parts of the pages that display the listing of blog entries and pages such as the one you're reading right now. 
 
-The subdirectories here are simply a means of providing some level of organization to the components. And they can be arranged and split into different parts in a way that's entirey up to the developer. What works best is something only experience with these types of sites can provide. And there have been and will be many debates on the topic of how to best segment and organize template files for years to come. Many of them occuring within the mind of individual developers. Don't feel bad if you have a difficult time determining what works best. I don't think anyone really knows the answer to that question, and if they claim to. They probably haven't got a lot of experience. d
+The subdirectories here are simply a means of providing some level of organization to the components. And they can be arranged and split into different parts in a way that's entirely up to the developer. What works best is something only experience with these types of sites can provide. And there have been and will be many debates on the topic of how to best segment and organize template files for years to come. Many of them occurring within the mind of individual developers. Don't feel bad if you have a difficult time determining what works best. I don't think anyone really knows the answer to that question, and if they claim to. They probably haven't got a lot of experience. d
 
 ### The content/ directory
 
-If you're a blogger, content adminsitrator, or novice web developer, this is the section that you'll want to pay the most attention to. 
+If you're a blogger, content administrator, or novice web developer, this is the section that you'll want to pay the most attention to. 
 
 
 #### Markdown and HTML (Markup)
 
-Inside the `content/posts/ directory, you'll find primarily a collection of **Markdown** files. **Mardown** is a simplified mark**up** language. (get it, mark**down**). 
+Inside the `content/posts/ directory, you'll find primarily a collection of **Markdown** files. **Markdown** is a simplified mark**up** language. (get it, mark**down**). 
 
 Markup languages date back to the days when typesetters had to place individual characters into rows on a print plate to produce a single printed page. (Can you even imagine the tediousness of such a job? I certainly don't want to and even more so I don't envy my predeccessors in the world of publishing) In those days, editors would provide a page of *marked-up* text. Individual parts would be surrounded by tags specifying where text should be bold, italic, a heading and so forth. HTML adds even more abilities such as the hyperlink which allows for quick reference to another document, much like an **in-text citation** to a source referenced by the document. 
 
@@ -205,7 +207,7 @@ Back to markdown. HTML markup specifies a very extensive set of tags. But, in th
  - an ordered and unordered list `<ul><li></li>...</ul>` and `<ol><li></li>...</ol>`
  - maybe a table `<table><tr><td></td>...</tr>...</table>` 
 
-Mardown provides a simplified syntax for all of these. They are all documented in this guide: [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) a far less daunting list than you'll find in the list of [HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) 
+Markdown provides a simplified syntax for all of these. They are all documented in this guide: [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) a far less daunting list than you'll find in the list of [HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) 
 
 
 #### Anatomy of a Blog Post
@@ -255,7 +257,7 @@ Next, an `ogImage` this is the image that is displayed when someone links a page
 
 Next, a `publishDate` is specified with a default value of the current date. This is used to determine the date displayed on the article and it's sort order on pages or components where posts are listed.
 
-Then we have `tags` this definition specifies that an array of string be supplied, in english that means something like this ["this", "is", "a", "list", "of", "tags"]. **Array** is another way of saying **list**. The definition here also specifies that everything supplied here be converted to lowercase. A good idea as when the list of articles gets sufficiently large, the author is bound to have made a post with a tag like, "JavaScript" and another with a tag like "javascript" which otherwide would be split into two tags when clearly the intent was for them to be the same.
+Then we have `tags` this definition specifies that an array of string be supplied, in english that means something like this ["this", "is", "a", "list", "of", "tags"]. **Array** is another way of saying **list**. The definition here also specifies that everything supplied here be converted to lowercase. A good idea as when the list of articles gets sufficiently large, the author is bound to have made a post with a tag like, "JavaScript" and another with a tag like "javascript" which otherwise would be split into two tags when clearly the intent was for them to be the same.
 
 Finally a required `title` with a max length of 60 characters and an optional `updatedDate` with a default value of the current date are specified.
 
@@ -263,7 +265,7 @@ Finally a required `title` with a max length of 60 characters and an optional `u
 Following the `---` three dashes after the metadata you'll find the content of the post. This is quite simple and I recommend referencing the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to guide what you'll put here. Unlike HTML you can create paragraph and line breaks just like you would in a normal word processor. You can add images that you saved to `public/`, though it is advisable you run them through a tinifier like the one at [TinyPng](https://tinypng.com/) (which also handles jpeg, avif, webp) to reduce their file size. If you plan to embed video and you're using cloudflare pages as a means of hosting your content, keep in mind that with that service there is a maximum file size limit of 25MB. For large media files, you have the option of uploading them to a site like youtube, or paying a small fee for a file storage bucket service like backblaze to host your files. The latter will put no restrictions on your content and is so inexpensive that it's most likely the preferable option. However, that all depends on whether you're trying to promote a youtube channel or not. Theses are all things to take into consideration when making decisions regarding the publication of your original content. 
 
 ### The pages/ directory
-The pages diretory contains static pages that appear on your site, usually the home page, maybe an about page or a contact page. Things of that nature. They differ only slightly from blog posts in most cases, but typically mdx or astro files are used to allowd for the inclusion of components directly. This is also where you might find complex landing pages with a lot of different elements. Notice that `posts/` is mirrored within this directory. That's because this is where the dynamic elements of the the blog are defined. The filename even has a placeholder for the url that's generated based on the filename of the blog post markdown files. Inside these files, you'll find where the metadata is placed throughout the content. If you're just beginning, you really don't need to touch these or completely understand what's going on here. It's worth a look, but if you don't understand, don't sweat it. There are developrs out there with years of experience that won't be able to comprehend all the moving parts here on first or second glance. This stuff isn't supposed to be simple. It's my intent with this article to point out what **IS** made simple by this system, so you can focus on that and make things.
+The pages diretory contains static pages that appear on your site, usually the home page, maybe an about page or a contact page. Things of that nature. They differ only slightly from blog posts in most cases, but typically mdx or astro files are used to allowed for the inclusion of components directly. This is also where you might find complex landing pages with a lot of different elements. Notice that `posts/` is mirrored within this directory. That's because this is where the dynamic elements of the the blog are defined. The filename even has a placeholder for the url that's generated based on the filename of the blog post markdown files. Inside these files, you'll find where the metadata is placed throughout the content. If you're just beginning, you really don't need to touch these or completely understand what's going on here. It's worth a look, but if you don't understand, don't sweat it. There are developers out there with years of experience that won't be able to comprehend all the moving parts here on first or second glance. This stuff isn't supposed to be simple. It's my intent with this article to point out what **IS** made simple by this system, so you can focus on that and make things.
 
 ### Other files of note
 - `rss.xml.ts`: this file specifies the metadata fields and how they map to the xml tags used in generating an [RSS feed](https://rss.com/blog/how-do-rss-feeds-work/)
@@ -271,9 +273,9 @@ The pages diretory contains static pages that appear on your site, usually the h
 - `utils/` directory: javascript functions for use in preprocessing of whatever data. Things like functions to format dates, or take a date and convert it to something novel like *w days, x weeks, y months and z years ago* you never know how you might need to change some piece of data around. 
 
 ## Publishing your changes. 
-So you've edited a bunch of files. You've examined your changes thouroghly on your local machine. You've even gotten a second or third set of eyes on it because you become blind to mistakes once you've been working on something for a long time. You definitely want to have **someone else** double check your work. Now you want to share it all with the world. In order to do that you'll need to understand the basics of [version control](https://en.wikipedia.org/wiki/Version_control) and you might as well learn [**GIT**](https://git-scm.com/) specifically since that the one everyone uses now. I'm sure you've heard of [github.com](https://github.com). To be honest, at this point I'd probably be suprised if a boomer didn't know what github was if it came up in conversation. It's really not that difficult. Think about it like a really fancy undo list, where the history is documented and doesn't go away when you close the program. There's also forks, branches, merges, rebasing, conflict resolution and all manner of other things to make you overwhelmed, but you **REALLY** only need to understand how to **clone** a **repository**, how to **commit** your changes, and how to **push** them to the **origin**. If there's more than one person working on your site, you'll also need to know that you'll want to run an **update** before you do anything. 
+So you've edited a bunch of files. You've examined your changes extensively on your local machine. You've even gotten a second or third set of eyes on it because you become blind to mistakes once you've been working on something for a long time. You definitely want to have **someone else** double check your work. Now you want to share it all with the world. In order to do that you'll need to understand the basics of [version control](https://en.wikipedia.org/wiki/Version_control) and you might as well learn [**GIT**](https://git-scm.com/) specifically since that the one everyone uses now. I'm sure you've heard of [github.com](https://github.com). To be honest, at this point I'd probably be surprised if a boomer didn't know what github was if it came up in conversation. It's really not that difficult. Think about it like a really fancy undo list, where the history is documented and doesn't go away when you close the program. There's also forks, branches, merges, rebasing, conflict resolution and all manner of other things to make you overwhelmed, but you **REALLY** only need to understand how to **clone** a **repository**, how to **commit** your changes, and how to **push** them to the **origin**. If there's more than one person working on your site, you'll also need to know that you'll want to run an **update** before you do anything. 
 
-(but this is what **branching** and **merging** are made to help with... see all the stuff about verion control that makes you overwhelmed... really all the stuff in tech that makes you overwhelmed... all of those things were created to make like easier. So think of it like that when you don't want to learn a new thing. It's 100% there to make it easier to do things.) 
+(but this is what **branching** and **merging** are made to help with... see all the stuff about version control that makes you overwhelmed... really all the stuff in tech that makes you overwhelmed... all of those things were created to make like easier. So think of it like that when you don't want to learn a new thing. It's 100% there to make it easier to do things.) 
 
 Ok, so when you got your project you ran
 
@@ -365,7 +367,7 @@ git status
 ```
 this will be reflected in the output. 
 
-I reccomend that you copy in the path of each file so that you pay attention to which files you changed. It's good to review which changes you made and make note of what you did. It's proper form to provide an adequate description of what your changes were in the message you specifiy with `git commit` it should be something like this:
+I recommend that you copy in the path of each file so that you pay attention to which files you changed. It's good to review which changes you made and make note of what you did. It's proper form to provide an adequate description of what your changes were in the message you specifically with `git commit` it should be something like this:
 
 ```bash
 git commit -m "created 2 new articles, added new images"
@@ -379,11 +381,11 @@ git commit -m "fixed an error in the dateParser() function in .... ..."
 
 since those two changes are unrelated and it's easy to rollback individual commits, its not so easy to pick out a specific change from within a commit containing several.
 
-Anyway... now you've commited your change, but **git** is what is known as a distributed version control system. There's no central repository, you can specify a copy of the repository as **origin** and that's usually what is done, but when you make a commit, this is only committed to your local copy of the repository. (older version control systems did not store a local copy). Nowadays we have one more step. And that is to run
+Anyway... now you've commitred your change, but **git** is what is known as a distributed version control system. There's no central repository, you can specify a copy of the repository as **origin** and that's usually what is done, but when you make a commit, this is only committed to your local copy of the repository. (older version control systems did not store a local copy). Nowadays we have one more step. And that is to run
 
 ```bash
 git push
 ```
-which will push all your changes to the url specified as the **origin**. you can make as many commits as you like before pushing, so it's adviseable to orgainize them. Later on we can get into the merits of branching, but for now this should be a sufficient introduction to a whole bunch of concepts. 
+which will push all your changes to the url specified as the **origin**. you can make as many commits as you like before pushing, so it's advisable to orgainize them. Later on we can get into the merits of branching, but for now this should be a sufficient introduction to a whole bunch of concepts. 
 
 Congratulations, you can now operate a website and many of the moving parts. If you are able to comprehend this guide, when the job market improves there should be plenty of jobs that pay anywhere from $25-$45/hr that you're now qualified to perform. You're welcome. Keep me in mind when you're shopping for that BMW, moneybags. **BTC: bc1qy2tqwljvv85uppxmlmnxmqlpc7dpaqe87h2ywm**
