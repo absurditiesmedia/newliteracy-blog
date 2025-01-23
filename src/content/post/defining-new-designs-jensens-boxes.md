@@ -8,7 +8,7 @@ coverImage:
     alt: "newliteracy business card image passed through letterpress then displayed in the terminal "
 ---
 
-The Boxes command line tool takes a block of text and wraps it in one of 50 some frames listed with `boxed -l` and specified by the user with `boxes -d` the text can either be piped into boxed or a file containing the text may be passed as as an argument `cat <file> | boxes -d <design>` or `boxes -d <design> <file>`. If you're like me, you can resist the urge to create an ascii design when prompted so, I've written this quick guide to help you understand how it all works.
+The "Boxes" command line tool takes a block of text and wraps it in one of 50 some frames listed with `boxed -l` and specified by the user with `boxes -d` the text can either be piped into boxed or a file containing the text may be passed as as an argument `cat <file> | boxes -d <design>` or `boxes -d <design> <file>`. If you're like me, you can't resist the urge to create an ascii design when prompted so, I've written this quick guide to help you understand how it all works.
 
 
 Here's an example from the file `boxes-config` located in `$HOME/.config/boxes/boxes-config` new designs can be added to the end of this file:
@@ -48,7 +48,7 @@ The first few lines are self-explanatory. Next comes the `sample` followd by an 
 
 further down the config you'll find **padding** this is pretty self explanitory, this is how many rows or columns will be added around the text supplied to boxes before adding the frame.
 
-Next you'll find the elastic function, this will specify which sides will be elastic, you'll notice as **N,S,E,W** are set, **N** doe not need to match the dimensions of **S** and **W** doe not need to match the dimensions of **E**.
+Next you'll find the elastic function, this will specify which sides will be elastic, you'll notice as **N,S,E,W** are set, **N** does not need to match the dimensions of **S** and **W** doe not need to match the dimensions of **E**.
 
 The configuration of a box is complete with the addition of END <designmame> to match the BOX <designname> at the top.
 
