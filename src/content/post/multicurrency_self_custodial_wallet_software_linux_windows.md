@@ -16,7 +16,9 @@ Bitcoin and Monero have excellent wallet software. For bitcoin, you have **[Elec
 - [Atomic Wallet](https://atomicwallet.io/)
 - [Stack Wallet](https://stackwallet.com/)
 - [Coinomi Wallet](https://www.coinomi.com/en/)
-- [Exodus Wallet](https://www.exodus.com/)eth_
+- [Exodus Wallet](https://www.exodus.com/)
+
+If you want the tl;dr and just jump to my final reccmendation <a href="#tldr">skip to the conclusion</a>
 
 Generally they work like this, you open the software, you're prompted to create or restore your wallet. Then you get a screen something like this, and all your altcoin wallets appear to be linked to your ethereum wallet. 
 
@@ -75,7 +77,7 @@ This is a nice feature, which all of the wallets have. No doubt with an affiliat
 Atomic Currency Swap/
 
 ![Stack Swap Currency](/images/crypto-wallets/stack_swap.png)
-Stack Currency Swap
+Stack Currency Swap. Notice you're given the option to select the exchange. The other programs don't have such an option
 
 ![Coinomi Swap Currency](/images/crypto-wallets/coinomi_swap_screen.png)
 Coinomi Currency Swap
@@ -98,11 +100,30 @@ You'll never miss a few... hundred thousand.
 ![Atomic Stake Coins](/images/crypto-wallets/atomic_stake_coins_for_percent_per_year.png)
 
 
+## Open Source? 
+All of the organizations behind these wallets have some kind of source code available on github, but it appears the only one to have the entire application available is stack wallet. Part of the whole reason one would want to have a self-custodial wallet is a matter of trust and, to me, there's no better way to show trustworthiness than transparency. And with softeware, this means opening all of your source code. 
+
+Here are the links to the github pages for each of these programs, you be the judge
+[Exodus](https://github.com/ExodusMovement)
+[Coinomi](https://github.com/coinomi/)
+[Stack](https://github.com/cypherstack)
+[Atomic](https://github.com/Atomicwallet)
+
+<a name="tldr"></a>
+## Conclusion
 And there you have it. If you need a place to store altcoins, this is the way to go, but for the major coins... the ones you actually want to hold: Bitcoin, Litecoin, Monero, Ethereum. Stick with the software that's developed for them. 
 
+But if you want my opinion on which of these four applications has the best features, I'm personally going to have to say [Stack](https://stackwallet.com/) or [Coinomi](https://www.coinomi.com/) for the following reasons:
 
-
-
+| Feature                                 | Stack | Coinomi   | Atomic    | Exodus    |
+| :-----------------------------------    | :---: | :-------: | :-------: | --------- |
+| 24 word seeds.                          |   X   |   X       |           |           |
+| BIP39 passphrase.                       |   X   |   X       |           |           |
+| muliple wallets                         |   X   |           |           |           |
+| Mutple exchanges                        |   X   |           |           |           |
+| Tor support                             |   X   |           |           |           |
+| All source code online                  |   X   |           |           |           |
+| Support for a wider variety of altcoins.|       |   X       |   X       |   X       |
 
 
 
