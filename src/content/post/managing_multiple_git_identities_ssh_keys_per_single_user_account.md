@@ -13,8 +13,8 @@ It turns out this is the easiest solution.
 If you're not familiar, when first configuring git, you're prompted to configure you name and email. In the `--global` scope like so:
 
 ```bash
-ssh config --global user.name "Your Name"
-ssh config --global user.email "your@email.com"
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
 ```
 
 Well this can also be done without the `--global` option on a per repository basis. 
