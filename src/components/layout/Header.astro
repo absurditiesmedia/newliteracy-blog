@@ -8,11 +8,11 @@ import logoImage from '../../assets/logo-transparent.png';
 const url = new URL(Astro.request.url);
 ---
 
-<header class="group relative mb-8 flex items-center sm:ps-[4.5rem]" id="main-header">
+<header class="group relative mb-8 flex items-center " id="main-header">
 	<div class="flex sm:flex-col">
 			<a
 			aria-current={url.pathname === "/" ? "page" : false}
-			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
+			class="inline-flex items-center site-title hover:filter-none sm:relative sm:inline-block"
 			href="/"
 		>
 		<!--
@@ -36,13 +36,13 @@ const url = new URL(Astro.request.url);
 				<path d="M45.334 240 0 213.334v120L45.334 360V240Z" fill="#B04304"></path>
 			</svg>
 		-->
-		<Image src={logoImage} alt="logo"  class="me-3 h-6 w-6 sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-12 sm:w-12"
-		></Image>
-			<span class="text-xl font-bold sm:text-2xl">{siteConfig.site_name}</span>
+		<!-- <Image src={logoImage} alt="logo"  class="me-3 h-6 w-6 sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-12 sm:w-12"
+		></Image>-->
+			<span class="text-xl font-bold sm:text-3xl">{siteConfig.site_name}</span>
 		</a>
 		<nav
 			aria-label="Main menu"
-			class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+			class="absolute -inset-x-4 top-14 hidden uppercase flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
 			id="navigation-menu"
 		>
 			{
@@ -59,8 +59,8 @@ const url = new URL(Astro.request.url);
 			}
 		</nav>
 	</div>
-	<Search />
-	<ThemeToggle />
+	<!--<Search /> -->
+	<!--<ThemeToggle /> -->
 	<mobile-button>
 		<button
 			aria-expanded="false"

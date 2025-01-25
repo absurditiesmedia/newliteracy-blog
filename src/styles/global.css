@@ -3,16 +3,86 @@
 @tailwind utilities;
 
 @layer base {
-	:root,
+	:root {
+		--hot-magenta: #ee00cc;
+		--honolulu-blue: #2277aa;
+		--imperial-red: #ff3344;
+		--spring-bud: #aaff00;
+		--yale-blue: #113366;
+		--penn-blue: #000033;
+		--english-violet: #443355;
+		--wisteria: #aa99cc;
+		--dark-purple: #332244;
 
+
+		--green: #00ff00ff;
+		--blue: #0000ffff;
+		--red: #ff0000ff;
+		--yellow: #ffff00ff;
+		--fuchsia: #ff00ffff;
+		--cyan-rgb: #00ffffff;
+		--electric-violet: #8800ffff;
+		--rose: #ff0077ff;
+		--pumpkin: #ff6600ff;
+		--shocking-pink: #ff00bbff;
+
+		--rich-black: #001219ff;
+		--midnight-green: #005f73ff;
+		--dark-cyan: #0a9396ff;
+		--tiffany-blue: #94d2bdff;
+		--vanilla: #e9d8a6ff;
+		--gamboge: #ee9b00ff;
+		--alloy-orange: #ca6702ff;
+		--rust: #bb3e03ff;
+		--rufous: #ae2012ff;
+		--auburn: #9b2226ff;
+
+
+		--rose: #f72585ff;
+		--fandango: #b5179eff;
+		--grape: #7209b7ff;
+		--chrysler-blue: #560badff;
+		--dark-blue: #480ca8ff;
+		--zaffre: #3a0ca3ff;
+		--palatinate-blue: #3f37c9ff;
+		--neon-blue: #4361eeff;
+		--chefchaouen-blue: #4895efff;
+		--vivid-sky-blue: #4cc9f0ff;		
+
+
+		--night: #0b090aff;
+		--eerie-black: #161a1dff;
+		--blood-red: #660708ff;
+		--cornell-red: #a4161aff;
+		--cornell-red-2: #ba181bff;
+		--imperial-red: #e5383bff;
+		--silver: #b1a7a6ff;
+		--timberwolf: #d3d3d3ff;
+		--white-smoke: #f5f3f4ff;
+		--white: #ffffffff;	
+		
+
+		--caribbean-current: #006466ff;
+		--midnight-green: #065a60ff;
+		--midnight-green-2: #0b525bff;
+		--midnight-green-3: #144552ff;
+		--charcoal: #1b3a4bff;
+		--prussian-blue: #212f45ff;
+		--space-cadet: #272640ff;
+		--dark-purple: #312244ff;
+		--dark-purple-2: #3e1f47ff;
+		--palatinate: #4d194dff;
+
+	} 
+	:root,
 	:root[data-theme="dark"] {
 		color-scheme: dark;
-		--theme-bg: 0deg 30% 99%;
-		--theme-link: 172deg 18% 41%;
-		--theme-text: 203deg 11% 15%;
-		--theme-accent: 351deg 66% 48%;
-		--theme-accent-2: 0deg 0% 7%;
-		--theme-quote: 351deg 66% 48%;;
+		--theme-bg: 210deg 6% 12%;
+		--theme-link: 330deg 49% 67%;
+		--theme-text: 220deg 3% 79%;
+		--theme-accent:var(--zaffre);
+		--theme-accent-2: 0deg 0% 93%;
+		--theme-quote: 102deg 100% 86%
 	}
 	:root[data-theme="light"] {
 		color-scheme: light;
@@ -26,7 +96,33 @@
 		--theme-quote: 102deg 100% 86%
 	}
 
+  a {
+		text-decoration: underline;
+		color:var(--fandango);	
+	}
 
+	a:link {
+	
+		color:var(--fuchsia);
+	}	
+
+	a:hover {
+		color:var(--shocking-pink);
+	}
+
+	a:active {
+		color:var(--hot-magenta);
+	}
+
+	#main-header a.site-title, footer a {
+		text-decoration: none;
+		color: var(--dark-cyan);
+	}
+
+	#main-header a, nav a {
+		text-decoration: none;
+		color: var(--chefchaouen-blue);
+	}
 
 	html {
 		@apply scroll-smooth;
@@ -35,4 +131,6 @@
 	body {
 		@apply mx-auto flex min-h-screen max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
 	}
+
 }
+

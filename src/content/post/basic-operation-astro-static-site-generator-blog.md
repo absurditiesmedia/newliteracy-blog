@@ -18,9 +18,7 @@ This site was built using astroJS and the following is the abbreviated structure
 
 Let's take a look at an abbreviated listing of the files in an astroJS site and go over the important moving parts:
 
-```bashthis should be a sufficient introduction to a whole bunch of concepts. 
-
-Congratulations, you can now operate a website and
+```bash
 [project root]
 ├── astro.config.ts
 ├── LICENSE
@@ -219,7 +217,7 @@ Inside the `content/posts` directory, you'll find a collection of markdown files
 
 It's also important to note that these files are not just markdown, they contain a section of metadata at the top before which is delimited by three dashes. This tells the markdown parser where the metadata ends and the page content begins. Which fields are required and which are optional is determined by the the settings for the theme. You'll notice a file at the root of the `content/` directory called `config.ts` this contains the definitions for each content type. On this site there is only the one `post`. Let's take a look at the definition:
 
-```
+```javascript
 const post = defineCollection({
 	schema: ({ image }) =>
 		z.object({
