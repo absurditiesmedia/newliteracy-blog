@@ -15,7 +15,8 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Meta property used as the default description meta property
-	description: "New Literacy Technology Consultants: Computer Repair, Sales, Virus Removal and More! Holland, MI. 616.300.6262. At New Literacy Technology Consultants, we specialize in affordable home computer and business solutions, offering everything from custom-built systems to repairs and upgrades. Whether you're looking for a new desktop or laptop, want to enhance your current machine, or need expert troubleshooting, we've got you covered. With our personalized service, you'll get the perfect system tailored to your specific needs without overspending. Contact us today for a free consultation and let us help you make the most of your technology! ",
+        description: "Guides and Tutorials on all things Technology. Providing Web Development, Computer Repair/Virus Removal, Sales and Upgrades based in Holland, MI. 616.300.6262",
+
 	//description: "Guides and tutorials covering a wide variety of concepts in information technology, brought to you by New Literacy Technology Consultants - Consulting, Sales and Repair for all your Technology needs in Holland, MI 616.300-6262",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: "en-US",
