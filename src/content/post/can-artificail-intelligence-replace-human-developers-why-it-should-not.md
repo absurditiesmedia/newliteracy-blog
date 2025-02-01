@@ -1,7 +1,7 @@
 ---
 title: Why AI Replacement of Human Developers is Not Useful
 description: There is much speculation about the future of employment in tech due to AI, why does this miss the big picture
-tags: ["Artificial intelligence/LLMs", "Web Development", "Employment","Graphic Design"]
+tags: ["Artificial intelligence and LLMs", "Web Development", "Employment","Graphic Design"]
 publishDate: "30 January 2025"
 coverImage:
     src: "../../assets/ai-question.png"
