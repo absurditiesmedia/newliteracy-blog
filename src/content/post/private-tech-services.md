@@ -47,7 +47,6 @@ I monitor your name, brand, or business across the web and alert you to new ment
 - I speak human — not just code.  
 - Everything is confidential and bespoke.  
 - Over 15 years of real-world tech experience.  
-- No templates — only high-end custom work.
 
 ---
 
