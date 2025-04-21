@@ -124,6 +124,9 @@
 		color: var(--chefchaouen-blue);
 	}
 
+	.tag-list a {
+	      color: var(--green);
+	}
 	html {
 		@apply scroll-smooth;
 	}

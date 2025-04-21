@@ -8,7 +8,7 @@ import { getAllPosts, getUniqueTags, groupPostsByYear, sortMDByDate } from "@/da
 import PageLayout from "@/layouts/Base.astro";
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const MAX_POSTS_PER_PAGE = 10;
+	const MAX_POSTS_PER_PAGE = 20;
 	const allPosts = await getAllPosts();
 	const allPostsByDate = sortMDByDate(allPosts);
 	const uniqueTags = getUniqueTags(allPosts);
@@ -88,12 +88,12 @@ const descYearKeys = Object.keys(groupedByYear).sort((a, b) => +b - +a);
 						</svg>
 						Tags
 					</h2>
-					<ul class="flex flex-wrap gap-2 text-bgColor">
+					<ul class="flex flex-wrap gap-2 text-accent tag-list">
 						{uniqueTags.map((tag) => (
 							<li>
 								<a
 									aria-label={`View all posts with the tag: ${tag}`}
-									class="flex items-center justify-center rounded-lg bg-accent p-1"
+									class="flex items-center justify-center rounded-lg bg-gray-700 p-1"
 									href={`/tags/${tag}/`}
 								>
 									{tag}
