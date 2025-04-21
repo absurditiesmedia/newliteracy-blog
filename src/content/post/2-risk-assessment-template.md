@@ -68,3 +68,5 @@ tags: ["startup", "business-plan-series", "writing",  "templates"]
 ### **Visuals**
 - **Risk Matrix:** A matrix showing the probability and impact of each risk to prioritize which to address first.
 - **Mitigation Flowchart:** A flowchart outlining steps for responding to different types of risks.
+
+[NEXT: MARKET ANALYSIS](/posts/3-market-analysis/)

@@ -45,3 +45,4 @@ In this section, you'll identify and assess the potential risks that may impact 
 
 This section gives investors a clear picture of the potential risks the business faces and how you plan to navigate them.
 
+[NEXT: RISK ASSESSMENT TEMPLATE](/posts/2-risk-assessment-template/)
