@@ -2,7 +2,7 @@
 import type { SiteMeta } from "@/types";
 import { SEO } from "astro-seo"
 import { siteConfig } from "@/site-config";
-
+import GoogleAnalytics from "./GoogleAnalytics.astro";
 import "../styles/global.css";
 
 type Props = SiteMeta;
@@ -102,3 +102,5 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+
+<GoogleAnalytics/>

@@ -8,6 +8,7 @@ import fs from "fs";
 import rehypeExternalLinks from "rehype-external-links";
 import remarkUnwrapImages from "remark-unwrap-images";
 import astroExpressiveCode from 'astro-expressive-code';
+import partytown from '@astrojs/partytown'
 import { expressiveCodeOptions } from "./src/site.config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
 
@@ -23,6 +24,11 @@ export default defineConfig({
 			applyBaseStyles: false,
 		}),
 		sitemap(),
+                partytown({
+                  config: {
+                    forward: ["datalayer.push"],
+                  },
+                }),
 		mdx(),
 		astroExpressiveCode({
 			// Replace the default themes with a custom set of bundled themes:
