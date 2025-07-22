@@ -20,10 +20,6 @@ coverImage:
 
 Get smart, easy-to-digest reports tailored to your interests — real estate trends, stock sentiment, political developments, or niche market research. All backed by data, presented clearly.
 
-### Digital Privacy & Security Checkups
-
-I assess your digital footprint, flag risks, and help you secure personal information before others exploit it. Peace of mind, delivered discreetly.
-
 ### Automation & Tech Concierge
 
 Streamline your digital tasks or personal routines with intelligent automations, smart home setup, or even custom tools built just for you. If you can imagine it, I can build it.
@@ -55,4 +51,4 @@ I monitor your name, brand, or business across the web and alert you to new ment
 Whether you're looking for insight, security, or less digital chaos — I'm here to help.
 
 **[Request a Consultation](mailto:contact@newliteracy.online)**
-616-300-6262
+616-300-7603

@@ -124,6 +124,16 @@
 		color: var(--chefchaouen-blue);
 	}
 
+	.text-fuchsia {color:var(--fuchsia);}
+
+	.text-charcoal {color: var(--charcoal);}
+
+	.text-purp {color:var(--chrysler-blue);}
+
+	.text-cyan {color:var(--dark-cyan);}
+
+	.text-tiffanyblue {color: var(--tiffany-blue);}
+
 	.tag-list a {
 	      color: var(--green);
 	}

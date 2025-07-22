@@ -1,0 +1,21 @@
+---
+import SocialList from "@/components/SocialList.astro";
+import PageLayout from "@/layouts/Base.astro";
+import { siteConfig } from "@/site-config";
+import ContactBlock from "@/components/ContactBlock.astro";
+import ServicesBlock from "@/components/ServicesBlock.astro";
+import RecentPostsBlock from "@/components/RecentPostsBlock.astro";
+---
+
+<PageLayout meta={{ title: "New Literacy Technology Consultants - Computer Repair - Holland MI" }}>
+	<section>
+	<h1 class="mt-4 text-xl sm:text-2xl text-tiffanyblue">Computer Repair in Holland, MI</h1>
+  <p>Welcome to <strong>New Literacy Technology Consultants</strong>! We provide reliable and affordable <strong>computer repair</strong> services in Holland, MI. Whether it’s hardware issues, software problems, or general maintenance, our expert technicians are here to help!</p>
+  </section>
+	<ContactBlock />
+	<ServicesBlock />
+	<RecentPostsBlock />
+	<section>
+		<h2 class="title" style="margin-top:2rem; font-size:2rem;">Call Us Today: 616.300.7603</h2>
+	</section>
+</PageLayout>

@@ -4,10 +4,10 @@ import PostPreview from "@/components/blog/PostPreview.astro";
 import { getAllPosts, sortMDByDate } from "@/data/post";
 import PageLayout from "@/layouts/Base.astro";
 import { siteConfig } from "@/site-config";
+
 const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
-
 const cactusTech: { desc: string; href: string; title: string }[] = [
         {
               desc: "Simplified, high-end tech solutions",
@@ -55,7 +55,7 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 		<SocialList />
 	</section>
 	<section>
-		<h2 class="title" style="margin-top:2rem; font-size:2rem;">Call Us Today: 616.300.6262</h2>
+		<h2 class="title" style="margin-top:2rem; font-size:2rem;">Call Us Today: 616.300.7603</h2>
 	</section>
 	<section class="mt-16">
 		<h2 class="title mb-4 text-xl">Services</h2>
@@ -90,6 +90,6 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 		</ul>
 	</section>
 	<section>
-		<h2 class="title" style="margin-top:2rem; font-size:2rem;">Call Us Today: 616.300.6262</h2>
+		<h2 class="title" style="margin-top:2rem; font-size:2rem;">Call Us Today: 616.300.7603</h2>
 	</section>
 </PageLayout>

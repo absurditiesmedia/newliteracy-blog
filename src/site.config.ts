@@ -15,9 +15,9 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	// Meta property used as the default description meta property
-        description: "Guides and Tutorials on all things Technology. Providing Web Development, Computer Repair/Virus Removal, Sales and Upgrades based in Holland, MI. 616.300.6262",
+        description: "Guides and Tutorials on all things Technology. Providing Web Development, Computer Repair/Virus Removal, Sales and Upgrades based in Holland, MI. 616.300.7603",
 
-	//description: "Guides and tutorials covering a wide variety of concepts in information technology, brought to you by New Literacy Technology Consultants - Consulting, Sales and Repair for all your Technology needs in Holland, MI 616.300-6262",
+	//description: "Guides and tutorials covering a wide variety of concepts in information technology, brought to you by New Literacy Technology Consultants - Consulting, Sales and Repair for all your Technology needs in Holland, MI 616.300-7603",
 	// HTML lang property, found in src/layouts/Base.astro L:18
 	lang: "en-US",
 	// Meta property, found in src/components/BaseHead.astro L:42

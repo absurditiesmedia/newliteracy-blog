@@ -4,6 +4,7 @@ import { SEO } from "astro-seo"
 import { siteConfig } from "@/site-config";
 import GoogleAnalytics from "./GoogleAnalytics.astro";
 import "../styles/global.css";
+import  StructuredData  from "@/components/StructuredData.astro";
 
 type Props = SiteMeta;
 
@@ -104,3 +105,4 @@ const socialImageURL = new URL(ogImage ? ogImage : "/social-card.png", Astro.url
 <link rel="manifest" href="/site.webmanifest">
 
 <GoogleAnalytics/>
+<StructuredData/>
